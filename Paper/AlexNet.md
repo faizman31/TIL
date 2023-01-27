@@ -1,5 +1,6 @@
 # AlexNet Paper Review
-
+Reference : <a href='https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf'>ImageNet Classification with Deep Convolutional Neural Networks</a>
+---
 ## 6 Result
 우리 네트워크는 top-1 과 top-5 테스트 오류율에서 각각 37.5% 와 17.0%를 달성했다.
 
@@ -10,6 +11,9 @@ ILSVRC-2012 테스트셋 레이블들은 공식적으로 사용이 가능하지 
 ImageNet Fall 2011(15M images,22K categories) release된 전체를 분류하기 위해 마지막 pooling layer에 6번째 Convolutional layer 추가한 하나의 CNN을 학습하고 그리고 나서 그것을 ILSVRC-2012 에 "fine-tuning" 한것은 16.6%의 오류율을 나타내었다.
 CNN 2개의 예측들을 평균낸 것은 Fall 2011에 release된 전체 데이터로 앞서 언급한 5개의 CNN들과 함께 pre-trained 되었고 그것들은 15.3%의 오류율을 나타내었다.
 두번째로 우수한 대회 출품작은 26.2%의 오류율을 달성하였다.
+
+![IMG_D3EB0D33955D-1](https://user-images.githubusercontent.com/76929568/215078042-fb1b8406-e158-416d-8a11-4b610847228f.jpeg)
+
 
 마지막으로 우리는 또한 ImageNet의 Fall 2009 버전에서의 우리의 오류율을 기록하였다.
 이 데이터셋에서 우리는 이미지들의 반은 훈련에 사용하고 반은 테스팅에 사용하는 문헌의 관례를 따랐다.
