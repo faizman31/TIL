@@ -1,7 +1,15 @@
 # AlexNet Paper Review
 Reference : <a href='https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf'>ImageNet Classification with Deep Convolutional Neural Networks</a>
 ---
-## 6 Result
+## 0.Abstract
+우리는 1000개의 다른 클래스가 존재하는 ImageNet LSVRC-2010 경진대회에서 1.2백만개의 고화질 이미지를 분류하기 위해 크고,깊은 컨볼루션 네트워크를 학습하였다.
+테스트 데이터에서 우리는 top-1 그리고 top-5 오류율 37.5%,17.0% 를 달성하였다. 이는 이전 state-of-art(SOTA) 보다 상당히 더 낫다.
+그 신경망은 60 milion 개의 파라미터와 650,000개의 뉴런을 가지고 있고,5개의 컨볼루션 레이어로 구성되고, 이 레이어들 중 일부는 Max-Pooling layer가 붙어있다. 그리고 3개의 FC-layer를 사용하며 최종 출력계층에는 1000 way 소프트맥스를 가지고 있다.
+학습을 더 빠르게 하기 위해, 우리는 포화하지 않는 뉴런을 사용하였고 매우 효율적인 컨볼루션 연산을 GPU에 시행하였다.
+FC-layer에서 과적합(Overfitting)을 줄이기 위해 우리는 최근에 발전된 Regularizaion 방법인 Dropout을 사용했고 이는 매우 효과적인것을 증명하였다.
+우리는 또한 ILSVRC-2012 경진대회 에서 이 모델을 변형하여 입력하였고 top-5 테스트 오류율 15.3%를 달성하여 우승하였다. 2번째로 우수한 모델은 top-5 테스트 오류율이 26.2% 였다. 
+
+## 6.Result
 우리 네트워크는 top-1 과 top-5 테스트 오류율에서 각각 37.5% 와 17.0%를 달성했다.
 
 우리는 또한 우리의 모델을 ILSVRC-2012 대회에 입력하였고 이 결과는 Table 2에 기록한 것이다.
